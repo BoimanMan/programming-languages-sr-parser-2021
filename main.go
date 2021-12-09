@@ -12,6 +12,9 @@ var inputArray = []string{"id", "+", "id", "*", "id"}
 var parStack parseStack
 var inQueue inputQueue
 var treeStack treeNodeStack
+//The grammar provided by Dr. Anthony Maida at the University of Louisiana at Lafayette.
+//The assignment was to construct a functioning SR Parser that used this grammar in tandem with the action table and goto table.
+//As such, aTable and gTable were also provided by Dr. Maida.
 var grammar = [6][]string{
 	{"E", "->", "E", "+", "T"},
 	{"E", "->", "T"},
@@ -271,6 +274,7 @@ func parse1step() {
 	//Finally, print parse tree stack
 	fmt.Println(treeStack.String())
 }
+//main function just formats the data and presents it in a readable way.
 func main() {
 	//fmt.Println("Stack		Input		Act.Lookup		Act.Val		LHS		RHS length		temp stack		goto lookup		goto value		stack action")
 	//fmt.Println("_______________________________________________________________________________________________________________________________________")
