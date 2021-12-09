@@ -12,6 +12,9 @@ parseStack           A parse stack for an SR parser.
 4. method pop()                     Pops the stack and returns the popped item.
 5. method popnum(n int)             Pops n items from stack. No return value.
 6. method String()                  Returns a string representation of the stack.
+
+NOTE: All of the methods and datatypes listed above were provided by Dr. Anthony Maida at the University of Louisiana at Lafayette.
+All other methods not listed above were created by me using Dr. Maida's existing datatypes and methods as a reference.
 */
 
 import (
